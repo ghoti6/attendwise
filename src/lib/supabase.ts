@@ -8,8 +8,8 @@ export const STORAGE_KEYS_SUPABASE = {
 
 // Retrieve configured Supabase URL & Key from localStorage or Vite environment variables
 export function getSupabaseConfig(): { url: string; anonKey: string; source: 'env' | 'custom' | 'none' } {
-  const envUrl = import.meta.env.VITE_SUPABASE_URL?.trim() || '';
-  const envKey = import.meta.env.VITE_SUPABASE_ANON_KEY?.trim() || '';
+  const envUrl = import.meta.env.SUPABASE_URL?.trim() || '';
+  const envKey = import.meta.env.SUPABASE_ANON_KEY?.trim() || '';
 
   let customUrl = '';
   let customKey = '';
