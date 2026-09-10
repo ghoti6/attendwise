@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Hide scrollbars across browsers while retaining full scrolling capability */
+.scrollbar-none::-webkit-scrollbar,
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.scrollbar-none,
+.no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+/* Remove all scrollbars in mobile view (phones, tablets, and touch screens) */
+@media (max-width: 1024px), (hover: none) and (pointer: coarse) {
+  html,
+  body,
+  #root,
+  * {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+  }
+
+  ::-webkit-scrollbar,
+  *::-webkit-scrollbar,
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+    -webkit-appearance: none !important;
+  }
+}

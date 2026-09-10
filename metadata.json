@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix AttendWise",
+  "description": "Smart college attendance tracking web app with whole-day skip planning, compulsory lab safeguards, and timetable optimization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
