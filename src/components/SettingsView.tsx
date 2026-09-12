@@ -702,7 +702,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({ onOpenWizard, onOpen
           <div className="p-3.5 rounded-2xl bg-zinc-50 dark:bg-zinc-800/40 border border-zinc-200 dark:border-zinc-700 text-xs space-y-1">
             <span className="font-bold text-zinc-700 dark:text-zinc-300">Target Database:</span>
             <div className="font-mono text-zinc-600 dark:text-zinc-400 truncate text-[11px]">
-              {supabaseConfig.url || 'Not configured'}
+              {'configured' || 'Not configured'}
             </div>
             {supabaseConfig.isCustom && (
               <span className="inline-block text-[10px] font-bold text-indigo-600 dark:text-indigo-400">
