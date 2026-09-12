@@ -793,7 +793,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({ onOpenWizard, onOpen
         </div>
 
         {/* Custom Credentials Form */}
-        {showCredsEditor && (
+        {/* {showCredsEditor && (
           <form
             onSubmit={handleSaveCustomCredentials}
             className="p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-800/40 border border-zinc-200 dark:border-zinc-700 space-y-3"
@@ -850,10 +850,10 @@ export const SettingsView: React.FC<SettingsViewProps> = ({ onOpenWizard, onOpen
               </button>
             </div>
           </form>
-        )}
+        )} */}
 
         {/* SQL Setup Script Box */}
-        {showSqlScript && (
+        {/* {showSqlScript && (
           <div className="p-4 rounded-2xl bg-zinc-900 text-zinc-100 text-xs space-y-3">
             <div className="flex items-center justify-between">
               <span className="font-mono font-bold text-emerald-400">
@@ -879,7 +879,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({ onOpenWizard, onOpen
             {syncFeedback}
           </div>
         )}
-      </div>
+      </div>*/}
 
       {/* Data Backup & Export */}
       <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-xs space-y-4">
